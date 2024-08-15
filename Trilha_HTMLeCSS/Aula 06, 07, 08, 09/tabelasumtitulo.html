@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas - Tabelas</title>
+    <style>
+        .cabecalhoTabel{
+            background-color: rgb(206, 206, 92);
+            font-size: 22px;
+        }
+        .rodapeTabel{
+            background-color: rgb(206, 206, 92);
+            text-align: center;
+        }
+        table{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <table border="2" width="400">
+        <tr>
+            <td rowspan="3">Coluna 1</td> <td colspan="3">Coluna 2</td> <td>Coluna 3</td> <td>Coluna 4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Coluna 1</td> <td colspan="2">Coluna 2</td> <td>Coluna 3</td> <td>Coluna 4</td>
+        </tr>
+        <tr>
+            <td>Coluna 1</td> <td>Coluna 2</td> <td>Coluna 3</td> <td>Coluna 4</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr><td colspan="2">Mais sobre tabelas - Sumario e titulo</td></tr>
+        <tr>
+            <td style="padding: 5px;">
+                <table border="1" summary="Texto do sumario">
+                    <caption>Catalogo de Materiais</caption>
+                    <thead class="cabecalhoTabel">
+                        <th colspan="4">Tabela de precos</th>
+                    </thead>
+                    <tbody>
+                        <tr class="linha1">
+                            <td rowspan="2">Seminovos</td>
+                            <td>Trompete</td>
+                            <td>Trombone</td>
+                            <td>Trompa</td>
+                        </tr>
+                        <tr class="linha2">
+                            <td>$500</td>
+                            <td>$640</td>
+                            <td>$650</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="rodapeTabel">
+                        <tr><td colspan="4">Visite nossa loja</td></tr>
+                    </tfoot>
+                </table>
+            </td>
+            <td>
+                <ul>
+                    <li><a href="./tabelas.html">Home</a></li>
+                    <li><a href="./tabelatitulo.html">Tabela com celulas de titulo</a></li>
+                    <li><a href="./tabelaccr.html">Cabeçalho, corpo e rodape</a></li>
+                    <li><a href="./tabelasumtitulo.html">Cabeçalho com sumario e titulo</a></li>
+                </ul>
+            </td>
+        </tr>
+        <tr><td colspan="2">Rodape</td></tr>
+    </table>
+</body>
+</html>
